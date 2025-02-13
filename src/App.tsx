@@ -2,7 +2,7 @@ import "./App.scss";
 import Header from "./components/header/header"; 
 import List from "./components/list/list";
 import SubHeader from "./components/SubHeader/subheader";
-import LlamaButton from "./LamaButton/LamaButton";
+import LlamaButton from "./components/LamaButton/LamaButton";
 
 function App() {
     const welcomeTitle = "Welcome";
@@ -10,7 +10,7 @@ function App() {
     return (
         <>
             <Header title={welcomeTitle}/>
-            <SubHeader> en sunheader</SubHeader>
+            <SubHeader> en subheader</SubHeader>
             <SubHeader> 
                <p>Another list:</p>
                <List items={animals}/>
@@ -23,6 +23,5 @@ function App() {
         </>
   );
 }
-
 export default App;
 
